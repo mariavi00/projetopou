@@ -7,7 +7,6 @@ public class animais
 
     public animais()
     {
-        fome=0.01;
     }
 
     public void SetFome(double f)
@@ -15,9 +14,29 @@ public class animais
         fome=f;
     }
 
-    public double Getfome()
+    public double GetFome()
     {
         return fome;
+    }
+
+    public void SetSede(double s)
+    {
+        sede=s;
+    }
+
+    public double GetSede()
+    {
+        return sede;
+    }
+
+    public void SetAlegria(double a)
+    {
+        alegria=a;
+    }
+
+    public double GetAlegria()
+    {
+        return alegria;
     }
 
 }
