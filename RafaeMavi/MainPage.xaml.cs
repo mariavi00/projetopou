@@ -1,6 +1,4 @@
-﻿using SystemConfiguration;
-
-namespace RafaeMavi;
+﻿namespace RafaeMavi;
 
 public partial class MainPage : ContentPage
 {
@@ -18,8 +16,14 @@ public partial class MainPage : ContentPage
 		Lola.SetAlegria (0.5);
 
 		Jorge = new macaco();
-		Mimosa = new vaca();
+		Jorge.SetFome (0.3);
+		Jorge.SetSede (0.2);
+		Jorge.SetAlegria (0.5);
 
+		Mimosa = new vaca();
+        Mimosa.SetFome (0.3);
+		Mimosa.SetSede (0.2);
+		Mimosa.SetAlegria (0.5);
 
 	}
 
