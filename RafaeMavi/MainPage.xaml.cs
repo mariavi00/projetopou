@@ -2,7 +2,6 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 	macaco Jorge;
 	coelho Lola;
 	vaca Mimosa;

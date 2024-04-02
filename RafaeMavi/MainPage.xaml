@@ -4,19 +4,20 @@
              x:Class="RafaeMavi.MainPage"
              Shell.NavBarIsVisible="false">
 
-    <Grid>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="*"/>
-          </Grid.RowDefinitions>
-
-          <Image Source="fundo.jpg"
-           Aspect="Fill"/>
-    </Grid>
-        <Frame x:Name="botoes"
-               Isvisible="false"
+      <Grid>
+        <Image Source="fundo.jpg"
+               Aspect="Fill"/>
+      
+        
+      <Frame   x:Name="botoes"
+               Padding="8"
+               WidthRequest="60"
+               BackgroundColor="#fff9e8"
                CornerRadius="30"
-               Margin="15"
-               BackgroundColor="#fff9e8"/> 
+               Margin="15,200,10,200"
+               HorizontalOptions="End"
+               VerticalOptions="Center"> 
+
          <Grid>
            <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -25,12 +26,25 @@
             <RowDefinition Height="*"/>
            </Grid.RowDefinitions>
 
-        <ImageButton Source="seta.png"/>    
-
+           <ImageButton x:Name="seta"
+                        Source="seta.png"
+                        Grid.Row="0"/>
+                             
+           <ImageButton x:Name="comida"
+                        Source="comida.png"
+                        Grid.Row="1"/>
           
+           <ImageButton x:Name="agua"
+                        Source="agua.jpg"
+                        Grid.Row="2"/>
+
+           <ImageButton x:Name="brinquedo"
+                        Source="brinquedo.png"
+                        Grid.Row="3"/>
          
-        </Grid>
-    </Frame>
+         </Grid>
+      </Frame>
+       </Grid>
     
     
 </ContentPage>
