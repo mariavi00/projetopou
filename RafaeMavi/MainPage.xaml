@@ -5,7 +5,7 @@
              Shell.NavBarIsVisible="false">
 
       <Grid>
-        <Image Source="fundo.jpg"
+        <Image Source="fundonovo.png"
                Aspect="Fill"/>
       
         
@@ -39,12 +39,78 @@
                         Grid.Row="2"/>
 
            <ImageButton x:Name="brinquedo"
-                        Source="brinquedo.png"
+                        Source="bola.png"
                         Grid.Row="3"/>
-         
+
          </Grid>
       </Frame>
+      <Frame   x:Name="barras"
+               Padding="8"
+               BackgroundColor="#fff9e8"
+               CornerRadius="30"
+               Margin="10,20"
+               HeightRequest="170"
+               VerticalOptions="Start">
+
+               <Grid>
+           <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+           </Grid.RowDefinitions>        
+
+          
+           <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions> 
+
+
+          <Image 
+                        Source="comida.png"
+                        Grid.Row="0"
+                        Grid.Column="0"/>
+          
+           <Image 
+                        Source="agua.jpg"
+                        Grid.Row="1"
+                        Grid.Column="0"/>
+
+           <Image 
+                        Source="bola.png"
+                        Grid.Row="2"
+                        Grid.Column="0"/> 
+
+          <ProgressBar  x:Name="progressoFome"   
+                        Progress="0.5"
+                        Grid.Row="0"
+                        Grid.Column="1"/>       
+
+          <ProgressBar  x:Name="progressoSede"   
+                        Progress="0.5"
+                        Grid.Row="1"
+                        Grid.Column="1"/> 
+
+          <ProgressBar  x:Name="progressoAlegria"   
+                        Progress="0.5"
+                        Grid.Row="2"
+                        Grid.Column="1"/>                              
+
+          </Grid>             
+      </Frame>       
+
+
+        <Image x:Name="imgPersonagem"
+                  Source="coelho.png"
+                  Margin="0,0,70,70"
+                  VerticalOptions="End"
+                  HorizontalOptions="Start"/>
+
+
+
+         
+         
        </Grid>
     
-    
+           
 </ContentPage>
