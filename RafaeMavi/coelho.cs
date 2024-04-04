@@ -1,8 +1,13 @@
 namespace RafaeMavi;
-public class coelho : animais
+public class Coelho : Animais
 {
-    public coelho() : base()
+    public Coelho() : base()
     {
-        
+          Arquivo="coelho.png";
+          fome=0.3;
+          sede=0.2;
+          alegria=0.5;
     }
+
+
 }

@@ -1,11 +1,11 @@
 namespace RafaeMavi;
-public class animais
+public class Animais
 {
     protected double fome;
     protected double sede;
     protected double alegria;
 
-    public animais()
+    public Animais()
     {
     }
 
@@ -37,6 +37,13 @@ public class animais
     public double GetAlegria()
     {
         return alegria;
+    }
+
+    protected string Arquivo;
+
+    public string GetArquivo()
+    {
+        return Arquivo;
     }
 
 }

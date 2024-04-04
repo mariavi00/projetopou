@@ -5,14 +5,14 @@
              Shell.NavBarIsVisible="false">
 
       <Grid>
-        <Image Source="fundonovo.png"
+        <Image Source="fundo.jpg"
                Aspect="Fill"/>
       
         
       <Frame   x:Name="botoes"
                Padding="8"
                WidthRequest="60"
-               BackgroundColor="#fff9e8"
+               BackgroundColor="#dcfce8"
                CornerRadius="30"
                Margin="15,200,10,200"
                HorizontalOptions="End"
@@ -27,6 +27,7 @@
            </Grid.RowDefinitions>
 
            <ImageButton x:Name="seta"
+                        Clicked="BotaoSetaFoiClicado"
                         Source="seta.png"
                         Grid.Row="0"/>
                              
@@ -46,7 +47,7 @@
       </Frame>
       <Frame   x:Name="barras"
                Padding="8"
-               BackgroundColor="#fff9e8"
+               BackgroundColor="#dcfce8"
                CornerRadius="30"
                Margin="10,20"
                HeightRequest="170"
@@ -63,10 +64,10 @@
            <Grid.ColumnDefinitions>
             <ColumnDefinition Width="40"/>
             <ColumnDefinition Width="*"/>
-          </Grid.ColumnDefinitions> 
+           </Grid.ColumnDefinitions> 
 
 
-          <Image 
+           <Image 
                         Source="comida.png"
                         Grid.Row="0"
                         Grid.Column="0"/>
@@ -101,7 +102,7 @@
 
 
         <Image x:Name="imgPersonagem"
-                  Source="coelho.png"
+                   
                   Margin="0,0,70,70"
                   VerticalOptions="End"
                   HorizontalOptions="Start"/>

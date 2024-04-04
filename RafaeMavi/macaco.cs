@@ -1,8 +1,13 @@
 namespace RafaeMavi;
-public class macaco : animais
+public class Macaco : Animais
 {
-    public macaco() : base()
+    public Macaco() : base()
     {
         fome=0.01;
+        sede=0.2;
+        alegria=0.5;
+        Arquivo="macaco.png";
     }
+
+   
 }
