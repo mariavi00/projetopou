@@ -7,10 +7,13 @@
       <Grid>
         <Image Source="fundo.jpg"
                Aspect="Fill"/>
+
+               
       
         
       <Frame   x:Name="botoes"
                Padding="8"
+               Text="Gustavo lindo!!"
                WidthRequest="60"
                BackgroundColor="#dcfce8"
                CornerRadius="30"
