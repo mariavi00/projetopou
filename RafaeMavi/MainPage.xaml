@@ -32,14 +32,17 @@
                         Grid.Row="0"/>
                              
            <ImageButton x:Name="comida"
+                        Clicked="BotaoComidaFoiClicado"
                         Source="comida.png"
                         Grid.Row="1"/>
           
            <ImageButton x:Name="agua"
-                        Source="agua.jpg"
+                        Clicked="BotaoAguaFoiClicado"
+                        Source="agua.png"
                         Grid.Row="2"/>
 
            <ImageButton x:Name="brinquedo"
+                        Clicked="BotaoBrinquedoFoiClicado"
                         Source="bola.png"
                         Grid.Row="3"/>
 
@@ -73,7 +76,7 @@
                         Grid.Column="0"/>
           
            <Image 
-                        Source="agua.jpg"
+                        Source="agua.png"
                         Grid.Row="1"
                         Grid.Column="0"/>
 
@@ -87,7 +90,7 @@
                         Grid.Row="0"
                         Grid.Column="1"/>       
 
-          <ProgressBar  x:Name="progressoSede"   
+          <ProgressBar  x:Name="progressoSede"
                         Progress="0.5"
                         Grid.Row="1"
                         Grid.Column="1"/> 
