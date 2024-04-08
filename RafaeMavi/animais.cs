@@ -4,6 +4,9 @@ public class Animais
     protected double fome;
     protected double sede;
     protected double alegria;
+    protected string Arquivo;
+    protected string ArquivoMorto;
+    protected bool morto;
 
     public Animais()
     {
@@ -11,7 +14,16 @@ public class Animais
 
     public void SetFome(double f)
     {
-        fome=f;
+            if(f>1)
+            fome=1;
+            else if (f<=0)
+        {
+            morto=true;
+            fome=0;
+        }
+            else
+            fome=f;
+     
     }
 
     public double GetFome()
@@ -39,10 +51,12 @@ public class Animais
         return alegria;
     }
 
-    protected string Arquivo;
 
     public string GetArquivo()
     {
+        if(morto)
+        return ArquivoMorto;
+        else 
         return Arquivo;
     }
 
