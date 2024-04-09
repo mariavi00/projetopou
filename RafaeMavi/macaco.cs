@@ -7,6 +7,7 @@ public class Macaco : Animais
         sede=0.2;
         alegria=0.5;
         Arquivo="macaco.png";
+        ArquivoMorto="macacomorto.png";
     }
 
    

@@ -7,6 +7,7 @@ public class Vaca : Animais
         sede=0.2;
         alegria=0.5;
         Arquivo="vaca.png";
+        ArquivoMorto="vacamorta.png";
     }
 
 }

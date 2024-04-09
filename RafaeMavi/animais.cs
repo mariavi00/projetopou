@@ -33,7 +33,16 @@ public class Animais
 
     public void SetSede(double s)
     {
-        sede=s;
+          if(s>1)
+            sede=1;
+            else if (s<=0)
+        {
+            morto=true;
+            sede=0;
+        }
+            else
+            sede=s;
+     
     }
 
     public double GetSede()
@@ -43,6 +52,14 @@ public class Animais
 
     public void SetAlegria(double a)
     {
+          if(a>1)
+            alegria=1;
+            else if (a<=0)
+        {
+            morto=true;
+            alegria=0;
+        }
+            else    
         alegria=a;
     }
 
@@ -58,6 +75,11 @@ public class Animais
         return ArquivoMorto;
         else 
         return Arquivo;
+    }
+
+    public bool Getmorto()
+    {
+      return morto;
     }
 
 }
