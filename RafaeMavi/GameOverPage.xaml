@@ -4,40 +4,24 @@
              x:Class="RafaeMavi.GameOverPage"
              Shell.NavBarIsVisible="false">
 
-
         <Grid>
-         <Grid.RowDefinitions>
-         <RowDefinition Height="60"/>
-         <RowDefinition Height="60"/>
-         </Grid.RowDefinitions>
-
-
-     <Label Text="Você perdeu."
-            TextColor="Black"
-            BackgroundColor="White"
-            LineHeight="1.2"
-            HorizontalOptions="Center"
-            HorizontalTextAlignment="Center"
-            VerticalOptions="Center"
-            FontSize="20"
-            FontFamily="TransformaSans-Medium"
-            Grid.Row="0"/>
-
-     <Button Text="Voltar ao início"
+        <Image Source="gameover.png"
+               Aspect="Fill"/>
+         
+         
+        <Button Text="Voltar ao início"
              Clicked="BotaoDeVoltarClicado"
              BackgroundColor="#6b2e65"
              TextColor="White"
              HeightRequest="50"
-             CornerRadius="15"
-             Margin="20,0"
+             CornerRadius="25"
+             Margin="20,0,20,20"
              FontSize="16"
              HorizontalOptions="Fill"
-             FontFamily="TransformaSans-Medium"
-             Grid.Row="1"/>
-       
+             VerticalOptions="End"
+             FontFamily="TransformaSans-Medium"/>
+          
         </Grid>
-     
-
 
 
 

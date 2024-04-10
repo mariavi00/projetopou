@@ -11,6 +11,7 @@ public partial class MainPage : ContentPage
 
 	Macaco	Jorge = new Macaco();
 	
+	IDispatcherTimer timer;
 
 	Vaca	Mimosa = new Vaca();
 	public MainPage()
@@ -19,10 +20,9 @@ public partial class MainPage : ContentPage
         
 		atual = Lola;
 		AtualizaPersonagem();
-		var timer=Application.Current.Dispatcher.CreateTimer();
+		timer=Application.Current.Dispatcher.CreateTimer();
 		timer.Interval=TimeSpan.FromSeconds(5);
-		timer.Tick+=(s,e)=>
-		PassouTempo();
+		timer.Tick+=(s,e)=>PassouTempo();
 		timer.Start();
 	}
 
@@ -41,7 +41,7 @@ public partial class MainPage : ContentPage
 			atual=Lola;
 			}
 			imgPersonagem.Source=atual.GetArquivo();
-
+			AtualizaPersonagem();
 		}
 
 	void AtualizaPersonagem()
@@ -72,16 +72,28 @@ public partial class MainPage : ContentPage
 	void PassouTempo()
 	{
 		var estavaMorto=atual.Getmorto();
-		atual.SetFome(atual.GetFome()-0.1);
-		atual.SetSede(atual.GetSede()-0.1);
-		atual.SetAlegria(atual.GetAlegria()-0.1);
+		Lola.SetFome(Lola.GetFome()-0.1);
+		Jorge.SetFome(Jorge.GetFome()-0.1);
+		Mimosa.SetFome(Mimosa.GetFome()-0.1);
+
+		Lola.SetSede(Lola.GetSede()-0.1);
+		Jorge.SetSede(Jorge.GetSede()-0.1);
+		Mimosa.SetSede(Mimosa.GetSede()-0.1);
+
+		Lola.SetAlegria(Lola.GetAlegria()-0.1);
+		Jorge.SetAlegria(Jorge.GetAlegria()-0.1);
+		Mimosa.SetAlegria(Mimosa.GetAlegria()-0.1);
 		AtualizaPersonagem();
+
 		if (estavaMorto != atual.Getmorto())
 			imgPersonagem.Source=atual.GetArquivo();
 		if (Jorge.Getmorto() &&
 		    Lola.Getmorto() &&
 		    Mimosa.Getmorto())
-		 Application.Current.MainPage = new GameOverPage();
+		{
+		 	Application.Current.MainPage = new GameOverPage();
+			timer.Stop();
+		}
 	}
 
 

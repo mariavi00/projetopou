@@ -5,8 +5,8 @@ public class Coelho : Animais
     {
           Arquivo="coelho.png";
           ArquivoMorto="coelhomorto.png";
-          fome=0.3;
-          sede=0.2;
+          fome=0.4;
+          sede=0.5;
           alegria=0.5;
     }
 

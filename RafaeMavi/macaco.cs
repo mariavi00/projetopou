@@ -3,8 +3,8 @@ public class Macaco : Animais
 {
     public Macaco() : base()
     {
-        fome=0.01;
-        sede=0.2;
+        fome=0.7;
+        sede=0.3;
         alegria=0.5;
         Arquivo="macaco.png";
         ArquivoMorto="macacomorto.png";
