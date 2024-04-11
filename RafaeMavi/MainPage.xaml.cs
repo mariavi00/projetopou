@@ -19,6 +19,9 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
         
 		atual = Lola;
+
+		imgPersonagem.Source=atual.GetArquivo();
+
 		AtualizaPersonagem();
 		timer=Application.Current.Dispatcher.CreateTimer();
 		timer.Interval=TimeSpan.FromSeconds(5);
